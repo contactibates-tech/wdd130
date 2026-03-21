@@ -20,6 +20,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: #000;
+    padding: 2px;
+    box-shadow: inset;
 }
 
 p {
@@ -30,4 +33,19 @@ footer {
     margin-top: 16px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+nav {
+    background-color: aliceblue;
+    padding: 1px;
+}
+
+nav a {
+    color: black;
+    padding: 1px;
+    display: block;
+}
+
+h1 {
+    padding: 2px;
 }
