@@ -22,7 +22,7 @@ main img {
     height: auto;
     border: #000;
     padding: 2px;
-    box-shadow: inset;
+    box-shadow: none;
 }
 
 p {
@@ -48,4 +48,5 @@ nav a {
 
 h1 {
     padding: 2px;
+    color: #000;
 }
