@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: boarder-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,7 +28,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav,
@@ -47,8 +47,15 @@ article {
     position: relative;
 }
 
-.hero img {
+.hero h1 {
     position: absolute;
+}
+
+.hero article {
+    position: absolute;
+}
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -72,7 +79,7 @@ article {
     padding: 14px;
     text-align: center;
     opacity: 0.8;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: var(--primary-color)
 }
 
