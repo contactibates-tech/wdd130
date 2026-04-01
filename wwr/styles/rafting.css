@@ -2,7 +2,7 @@
     --primary-color: #7CA6A6;
     --secondary-color: #50594F;
     --accent1-color: #565159;
-    --accent2-color: #F2F2E9;
+    --accent2-color: #fff;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -69,13 +69,13 @@ h1 {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: white;
+    color: var(--accent2-color);
 }
 
 article {
     position: absolute;
-    top: 15px;
-    width: 100%;
+    top: 150px;
+    width: 95%;
     padding: 14px;
     text-align: center;
     opacity: 0.8;
