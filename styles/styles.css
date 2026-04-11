@@ -1,9 +1,19 @@
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
     width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     margin: 1rem;
     border: 1px solid rgb(62 83 201/ 0.2);
     padding: 1rem;
@@ -14,13 +24,15 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 48px;
-    left: 150px;
+    top: 10px;
+    left: 20px;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    left: 50px;
+    position: relative;
 }
 
 main img {
@@ -36,6 +48,13 @@ p {
     padding: 0;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 footer {
     margin-top: 16px;
     border-top: 1px solid #000;
@@ -43,19 +62,27 @@ footer {
 }
 
 nav {
-    background-color: aliceblue;
-    padding: 1px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: black;
-    padding: 1px;
     display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
     padding: 2px;
     color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
 }
 
 * {

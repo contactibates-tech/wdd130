@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us - Logan River rafting</title>
-    <meta name="description" content="About us page for Logan River rafting company based in Cache Valley Utah">
+    <title>About Us - Logan River Rafting</title>
+    <meta name="description" content="About us page for Logan River Rafting company based in Cache Valley, Utah">
     <meta name="author" content="Isaac Bates">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -13,46 +13,57 @@
 <body>
 
     <header>
-        <img src="images/logan_river_logo.jpg" alt="Logan River rafting logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+        <div class="top-bar">
+            <img src="images/logan_river_logo.jpg" alt="Logan River Rafting Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Background image">
-            <h1>Logan River Rafting company</h1>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Logan River Rafting" class="hero-bg">
+            <h1>Logan River Rafting</h1>
             <article>
-                <img src="images/rafting.jpg" alt="happy clients" width="300">
-                <p>Our mission is to build connections and relationships through the thrill and adventure on the water
+                <img src="images/rafting.jpg" alt="Happy clients rafting" width="280">
+                <p>Our mission is to build connections and relationships through the thrill and adventure on the water.
                 </p>
             </article>
-        </div>
-        <section>
-            <h2>History</h2>
-            <p>Founded in 1998, in Cache valley Utah ...........</p>
         </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
+
+        <!-- History Section -->
+        <section class="history">
+            <h2>Our History</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Founded in 1998 in beautiful Cache Valley, Utah, Logan River Rafting began with a simple passion
+                        — sharing the excitement of whitewater with friends and family. What started as weekend trips on
+                        the Logan River has grown into one of Northern Utah’s most trusted rafting companies.</p>
+                    <p>Over 25 years later, we still operate with the same values: safety first, unforgettable
+                        experiences, and respect for the rivers we love.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="adventure">
+            <h2>Adventure Awaits You</h2>
         </section>
     </main>
+
     <footer>
-        <p>©️2026 | Logan River Rafting | Isaac Bates </p>
+        <p>© 2026 Logan River Rafting | Cache Valley, Utah | Isaac Bates</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook-bw.svg" alt="Facebook icon">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin-bw.svg" alt="Linkedin icon">
-            </a>
-            <a href="https://youtube.com">
-                <img src="images/youtube-bw.svg" alt="Youtube icon">
-            </a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook-bw.svg" alt="Facebook"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-bw.svg" alt="LinkedIn"></a>
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube-bw.svg" alt="YouTube"></a>
         </nav>
     </footer>
+
 </body>
 
 </html>
