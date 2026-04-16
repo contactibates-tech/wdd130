@@ -156,6 +156,268 @@ nav a.active {
     margin-bottom: 20px;
 }
 
+/* ====================== NEWSLETTER FORM ====================== */
+.newsletter-form {
+    max-width: 100%;
+    background: var(--accent2-color);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-form h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+.newsletter-form .form-group {
+    margin-bottom: 20px;
+}
+
+.newsletter-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.05rem;
+}
+
+.newsletter-form button {
+    background: var(--primary-color);
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: #2a5a5a;
+}
+
+.privacy-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .newsletter-form {
+        padding: 30px 20px;
+    }
+}
+
+/* ====================== CALL TO ACTION ====================== */
+.cta-trips {
+    max-width: 840px;
+    margin: 40px auto;
+    padding: 60px 30px;
+    background: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(57, 116, 116, 0.25);
+}
+
+.cta-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.cta-trips h2 {
+    font-family: var(--heading-font);
+    font-size: 2.7rem;
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+
+.cta-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 35px;
+    opacity: 0.95;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent2-color);
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    font-weight: bold;
+    padding: 18px 48px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: #f0f0f0;
+}
+
+.cta-trust {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* ====================== SIDE-BY-SIDE SECTION ====================== */
+.side-by-side {
+    max-width: 840px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.newsletter-column,
+.cta-column {
+    width: 100%;
+}
+
+.newsletter-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====================== NEWSLETTER ====================== */
+.newsletter-form {
+    background: var(--accent2-color);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.newsletter-form h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+/* ====================== CTA TRIPS ====================== */
+.cta-trips {
+    height: 100%;
+    padding: 60px 30px;
+    background: var(--primary-color);
+    color: var(--accent2-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(57, 116, 116, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ====================== FEATURES GRID ====================== */
+.features-grid {
+    max-width: 840px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 16 / 11;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.feature-card:hover .feature-img {
+    transform: scale(1.08);
+}
+
+.feature-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(57, 116, 116, 0.92), rgba(57, 116, 116, 0.6));
+    color: var(--accent2-color);
+    padding: 35px 25px 25px;
+    text-align: center;
+}
+
+.feature-overlay h3 {
+    font-family: var(--heading-font);
+    font-size: 1.85rem;
+    margin-bottom: 10px;
+}
+
+.feature-overlay p {
+    margin-bottom: 20px;
+    opacity: 0.95;
+    line-height: 1.5;
+}
+
+.feature-button {
+    display: inline-block;
+    background: var(--accent2-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.feature-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+.coming-soon {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 /* ====================== CONTACT PAGE ====================== */
 .company-info {
     text-align: center;
@@ -323,8 +585,222 @@ footer {
     transform: scale(1.15);
 }
 
+/* ====================== TRIPS ====================== */
+.trips-hero {
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+}
+
+.trips-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trips-hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(57, 116, 116, 0.95), transparent);
+    color: white;
+    padding: 60px 20px 40px;
+    text-align: center;
+}
+
+.trips-hero h1 {
+    font-family: var(--heading-font);
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.trips-hero p {
+    font-size: 1.35rem;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* Featured Trips Grid */
+.featured-trips {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 24px;
+}
+
+.trip-info h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.trip-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.trip-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Detailed Trip Sections */
+.detailed-trips {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.trip-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.trip-detail:nth-child(even) {
+    grid-template-columns: 1fr 1fr;
+}
+
+.trip-detail-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trip-detail-text h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.trip-detail img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.price-tag {
+    background: var(--primary-color);
+    color: white;
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+/* Trips Table */
+.trips-table-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    padding: 18px 14px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 18px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.book-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.book-btn:hover {
+    background: #2a5a5a;
+    transform: scale(1.05);
+}
+
+.trip-detail,
+.trip-detail:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.trips-hero h1 {
+    font-size: 2.6rem;
+}
+
 /* ====================== RESPONSIVE ====================== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     .history-content,
     .history {
@@ -351,4 +827,39 @@ footer {
     .adventure h2 {
         font-size: 2.3rem;
     }
+
+    .cta-trips {
+        padding: 50px 20px;
+        margin: 80px auto;
+    }
+
+    .cta-trips h2 {
+        font-size: 2.3rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 16px 40px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 15px;
+        gap: 30px;
+    }
+
+    .feature-overlay {
+        padding: 30px 20px 20px;
+    }
+
+    .side-by-side {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .newsletter-form {
+        padding: 35px 25px;
+    }
+
 }
